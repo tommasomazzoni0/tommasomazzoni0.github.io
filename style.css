@@ -29,4 +29,6 @@ body {
 /* Evita scroll orizzontale */
 body, html {
     overflow-x: hidden;
+        scroll-behavior: smooth;
+
 }

@@ -14,13 +14,13 @@
 <body class="bg-gray-50">
 
     <!-- Navbar -->
-    <nav class="bg-red-700 text-white p-4 flex justify-between items-center sticky top-0 z-20">
+    <nav class="bg-red-700 text-white p-4 flex justify-between items-center fixed top-0 left-0 w-full z-20 shadow-lg ">
         <h1 class="titolo">Albaredo per san marco</h1>
         <ul class="hidden md:flex space-x-6">
-            <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
-            <li><a href="#eventi" class="hover:text-yellow-300">Eventi</a></li>
-            <li><a href="#galleria" class="hover:text-yellow-300">Galleria</a></li>
-            <li><a href="#contatti" class="hover:text-yellow-300">Contatti</a></li>
+            <li><a href="#home" class="mr-4">Home</a></li>
+            <li><a href="#eventi" class="mr-4">Eventi</a></li>
+            <li><a href="#galleria" class="mr-4">Galleria</a></li>
+            <li><a href="#contatti" class="mr-4">Contatti</a></li>
         </ul>
     </nav>
 
@@ -65,7 +65,7 @@
 
 
     <!-- Eventi Section -->
-    <section id="eventi" class="py-16 px-6 md:px-20 bg-white">
+    <section id="eventi" class="py-16 px-6 md:px-20 bg-white scroll-mt-16">
         <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Eventi</h3>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-gray-100 p-6 rounded shadow-lg" data-aos="fade-right">
@@ -84,7 +84,7 @@
     </section>
 
     <!-- Galleria Section -->
-    <section id="galleria" class="py-16 px-6 md:px-20 bg-gray-50">
+    <section id="galleria" class="py-16 px-6 md:px-20 bg-gray-50 scroll-mt-16">
         <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Galleria</h3>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             <img src="img/presepe_valeta.jpg" alt="Decorazioni" class="rounded shadow-lg" data-aos="zoom-in">
@@ -94,7 +94,7 @@
     </section>
 
     <!-- Contatti Section -->
-    <section id="contatti" class="py-16 px-6 md:px-20 bg-white">
+    <section id="contatti" class="py-16 px-6 md:px-20 bg-white scroll-mt-16">
         <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contatti</h3>
         <form class="max-w-lg mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
             <input type="text" placeholder="Nome" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-red-700">
