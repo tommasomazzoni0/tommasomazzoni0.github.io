@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natale nel Borgo - Home</title>
+    <title>Natale nel Borgo - Eventi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-[#F9FAFB] text-[#111827]">
-
-    <!-- Navbar -->
+    <!-- Navbar (stesso codice del index) -->
     <nav class="bg-[#EF4444] text-white p-4 flex justify-between items-center sticky top-0 z-50">
         <h1 class="text-2xl font-bold">Natale nel Borgo</h1>
         <ul class="hidden md:flex space-x-6">
@@ -20,8 +19,6 @@
         </ul>
         <button id="menu-btn" class="md:hidden">☰</button>
     </nav>
-
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden flex-col bg-[#EF4444] text-white p-4 space-y-3 md:hidden">
         <a href="index.html" class="hover:text-[#FBBF24]">Home</a>
         <a href="eventi.html" class="hover:text-[#FBBF24]">Eventi</a>
@@ -29,16 +26,28 @@
         <a href="contatti.html" class="hover:text-[#FBBF24]">Contatti</a>
     </div>
 
-    <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('img/hero.jpg')">
-        <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">Benvenuti al Natale nel Borgo</h2>
-            <p class="mt-4 text-lg md:text-2xl text-white drop-shadow-md">Scopri luci, eventi e magia nel cuore del borgo</p>
-            <a href="eventi.html" class="mt-6 inline-block bg-[#FBBF24] text-[#EF4444] font-bold px-6 py-3 rounded shadow hover:bg-[#FFD54F] transition">Scopri gli Eventi</a>
+    <!-- Eventi -->
+    <section class="py-16 px-6 md:px-20">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Eventi di Natale</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded shadow p-6" data-aos="fade-right">
+                <img src="img/mercatino.jpg" alt="Mercatino" class="rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Mercatino di Natale</h3>
+                <p>Artigianato locale, dolci tipici e decorazioni natalizie.</p>
+            </div>
+            <div class="bg-white rounded shadow p-6" data-aos="fade-up">
+                <img src="img/concerto.jpg" alt="Concerto" class="rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Concerto Corale</h3>
+                <p>Canti natalizi in piazza, un'atmosfera magica per tutti.</p>
+            </div>
+            <div class="bg-white rounded shadow p-6" data-aos="fade-left">
+                <img src="img/villaggio.jpg" alt="Villaggio" class="rounded mb-4">
+                <h3 class="text-xl font-semibold mb-2">Villaggio di Babbo Natale</h3>
+                <p>Incontra Babbo Natale, slitte e animazioni per la famiglia.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-[#EF4444] text-white text-center py-6">
         © 2026 Natale nel Borgo. Tutti i diritti riservati.
     </footer>
