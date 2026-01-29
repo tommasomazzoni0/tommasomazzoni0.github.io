@@ -25,13 +25,23 @@
         <button id="menu-btn" class="md:hidden">☰</button>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden flex-col bg-red-700 text-white p-4 space-y-3 md:hidden">
-        <a href="#home" class="hover:text-yellow-300">Home</a>
-        <a href="#eventi" class="hover:text-yellow-300">Eventi</a>
-        <a href="#galleria" class="hover:text-yellow-300">Galleria</a>
-        <a href="#contatti" class="hover:text-yellow-300">Contatti</a>
-    </div>
+<!-- Pulsante menu -->
+<button id="menu-btn" class="md:hidden z-50 fixed top-4 right-4 bg-red-700 text-white p-3 rounded shadow-lg">
+    ☰
+</button>
+
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-30"></div>
+
+
+<!-- Menu laterale -->
+<div id="mobile-menu" class="fixed top-0 right-[-100%] h-full w-64 bg-red-700 text-white p-6 flex flex-col space-y-6 transition-all duration-300 z-40">
+    <a href="#home" class="hover:text-yellow-300">Home</a>
+    <a href="#eventi" class="hover:text-yellow-300">Eventi</a>
+    <a href="#galleria" class="hover:text-yellow-300">Galleria</a>
+    <a href="#contatti" class="hover:text-yellow-300">Contatti</a>
+</div>
+
+
 
     <!-- Hero Section -->
     <section id="home" class="hero relative h-screen w-full flex flex-col items-center justify-center text-white text-center">
