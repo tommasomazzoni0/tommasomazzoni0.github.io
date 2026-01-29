@@ -3,52 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natale nel Borgo - Home</title>
+    <title>Natale nel Borgo</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animations -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Stili personalizzati -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#F9FAFB] text-[#111827]">
+<body class="bg-gray-50">
 
     <!-- Navbar -->
-    <nav class="bg-[#EF4444] text-white p-4 flex justify-between items-center sticky top-0 z-50">
-        <h1 class="text-2xl font-bold">Natale nel Borgo</h1>
+    <nav class="bg-red-700 text-white p-4 flex justify-between items-center sticky top-0 z-50">
+        <h1 class="titolo">Albaredo per san marco</h1>
         <ul class="hidden md:flex space-x-6">
-            <li><a href="index.html" class="hover:text-[#FBBF24]">Home</a></li>
-            <li><a href="eventi.html" class="hover:text-[#FBBF24]">Eventi</a></li>
-            <li><a href="galleria.html" class="hover:text-[#FBBF24]">Galleria</a></li>
-            <li><a href="contatti.html" class="hover:text-[#FBBF24]">Contatti</a></li>
+            <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+            <li><a href="#eventi" class="hover:text-yellow-300">Eventi</a></li>
+            <li><a href="#galleria" class="hover:text-yellow-300">Galleria</a></li>
+            <li><a href="#contatti" class="hover:text-yellow-300">Contatti</a></li>
         </ul>
         <button id="menu-btn" class="md:hidden">☰</button>
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden flex-col bg-[#EF4444] text-white p-4 space-y-3 md:hidden">
-        <a href="index.html" class="hover:text-[#FBBF24]">Home</a>
-        <a href="eventi.html" class="hover:text-[#FBBF24]">Eventi</a>
-        <a href="galleria.html" class="hover:text-[#FBBF24]">Galleria</a>
-        <a href="contatti.html" class="hover:text-[#FBBF24]">Contatti</a>
+    <div id="mobile-menu" class="hidden flex-col bg-red-700 text-white p-4 space-y-3 md:hidden">
+        <a href="#home" class="hover:text-yellow-300">Home</a>
+        <a href="#eventi" class="hover:text-yellow-300">Eventi</a>
+        <a href="#galleria" class="hover:text-yellow-300">Galleria</a>
+        <a href="#contatti" class="hover:text-yellow-300">Contatti</a>
     </div>
 
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('img/hero.jpg')">
-        <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">Benvenuti al Natale nel Borgo</h2>
-            <p class="mt-4 text-lg md:text-2xl text-white drop-shadow-md">Scopri luci, eventi e magia nel cuore del borgo</p>
-            <a href="eventi.html" class="mt-6 inline-block bg-[#FBBF24] text-[#EF4444] font-bold px-6 py-3 rounded shadow hover:bg-[#FFD54F] transition">Scopri gli Eventi</a>
+    <section id="home" class="hero relative h-screen w-full flex flex-col items-center justify-center text-white text-center">
+    <div data-aos="fade-up" class="relative z-10 px-4">
+        <h2 class="text-4xl md:text-6xl font-extrabold drop-shadow-lg">Benvenuti al Natale nel Borgo</h2>
+        <p class="mt-4 text-lg md:text-2xl drop-shadow-md">Scopri luci, eventi e magia nel cuore del borgo</p>
+        <a href="#eventi" class="mt-6 inline-block bg-yellow-300 text-red-700 font-bold px-6 py-3 rounded shadow hover:bg-yellow-400 transition">Scopri gli Eventi</a>
+    </div>
+
+    <!-- Testo introduttivo -->
+    <div class="mt-12 max-w-3xl bg-white bg-opacity-80 text-[#111827] p-6 rounded shadow-lg relative z-10 px-4" data-aos="fade-up" data-aos-delay="200">
+        <p class="text-lg md:text-xl">
+            "Natale nel Borgo" è un percorso suggestivo che si snoda attraverso le vie del borgo, portando visitatori e famiglie a scoprire presepi realizzati con amore e dedizione dalla comunità. Un'esperienza che unisce tradizione, arte e spirito natalizio.
+        </p>
+        <p class="mt-4 text-lg md:text-xl">
+            Ogni tappa del percorso è curata da membri della comunità, creando un legame speciale tra i visitatori e i luoghi del borgo.
+        </p>
+    </div>
+</section>
+
+
+
+
+    <!-- Eventi Section -->
+    <section id="eventi" class="py-16 px-6 md:px-20 bg-white">
+        <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Eventi</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-100 p-6 rounded shadow-lg" data-aos="fade-right">
+                <h4 class="text-xl font-semibold mb-2">Mercatino di Natale</h4>
+                <p>Artigianato locale, dolci tipici e decorazioni natalizie.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded shadow-lg" data-aos="fade-up">
+                <h4 class="text-xl font-semibold mb-2">Concerto Corale</h4>
+                <p>Canti natalizi in piazza, un'atmosfera magica per grandi e piccini.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded shadow-lg" data-aos="fade-left">
+                <h4 class="text-xl font-semibold mb-2">Villaggio di Babbo Natale</h4>
+                <p>Incontra Babbo Natale, slitte e animazioni per tutta la famiglia.</p>
+            </div>
         </div>
     </section>
 
+    <!-- Galleria Section -->
+    <section id="galleria" class="py-16 px-6 md:px-20 bg-gray-50">
+        <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Galleria</h3>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <img src="img/presepe_valeta.jpg" alt="Decorazioni" class="rounded shadow-lg" data-aos="zoom-in">
+            <img src="img/mercatino.jpg" alt="Mercatino" class="rounded shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+            <img src="img/luci.jpg" alt="Luci" class="rounded shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="py-16 px-6 md:px-20 bg-white">
+        <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contatti</h3>
+        <form class="max-w-lg mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
+            <input type="text" placeholder="Nome" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-red-700">
+            <input type="email" placeholder="Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-red-700">
+            <textarea placeholder="Messaggio" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-red-700"></textarea>
+            <button type="submit" class="w-full bg-red-700 text-white p-3 rounded hover:bg-red-800 transition">Invia Messaggio</button>
+        </form>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-[#EF4444] text-white text-center py-6">
+    <footer class="bg-red-700 text-white text-center py-6">
         © 2026 Natale nel Borgo. Tutti i diritti riservati.
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000 });
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
-    </script>
+    <script src="script.js"></script>
+
 </body>
 </html>

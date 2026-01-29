@@ -1,0 +1,32 @@
+/* Font e hero image */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: url('img/presepe_valeta.jpg') center/cover no-repeat;
+}
+
+.titolo {
+    font-family: 'Arial', sans-serif;   /* Font pulito e leggibile */
+    font-size: 2.5rem;                  /* Grandezza importante, adattabile con media queries */
+    font-weight: 700;                   /* Grassetto moderno */
+    color: #EF4444;                     /* Rosso vivo, lo stesso della navbar */
+    text-align: center;                 /* Centra il testo */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Leggero effetto ombra */
+    letter-spacing: 1px;                /* Spaziatura moderna tra lettere */
+    line-height: 1.2;                   /* Migliora leggibilità su più righe */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3); /* overlay leggero */
+    z-index: 1;
+}
+
+/* Evita scroll orizzontale */
+body, html {
+    overflow-x: hidden;
+}
