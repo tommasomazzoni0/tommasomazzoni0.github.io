@@ -32,3 +32,46 @@ body, html {
         scroll-behavior: smooth;
 
 }
+
+.hero-coming {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 70vh;          /* prima era troppo */
+    padding: 2rem 3rem;
+}
+
+.hero-img {
+    width: 45%;
+    max-width: 480px;
+}
+
+@media (max-width: 768px) {
+    .hero-coming {
+        flex-direction: column;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-img,
+    .in_arrivo {
+        width: 100%;
+    }
+
+    .in_arrivo {
+        white-space: normal;   /* torna a capo su telefono */
+        font-size: 1.8rem;
+    }
+}
+
+.in_arrivo {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 2.8rem;
+    color: #ad0101;
+    text-align: center;
+    text-shadow: 0 4px 12px rgba(246, 0, 0, 0.6);
+}
+
+
+
