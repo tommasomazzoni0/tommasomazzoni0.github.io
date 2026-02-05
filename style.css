@@ -50,24 +50,20 @@ body, html {
 @media (max-width: 768px) {
     .hero-coming {
         flex-direction: column;
-        min-height: auto;
-        text-align: center;
+        padding: 1.2rem;
+        gap: 1rem;
     }
 
-    .hero-img,
+    .hero-img {
+        width: 100%;
+        max-width: 300px;   /* 🔴 limita l’altezza reale */
+    }
+
     .in_arrivo {
         width: 100%;
-    }
-
-    .in_arrivo {
-        white-space: normal;   /* torna a capo su telefono */
-         font-family: 'Mountains of Christmas', cursive;
-    font-size: 2.8rem;
-     min-height: 50vh;  
-    color: #ad0101;
-    text-align: center;
-    text-shadow: 0 4px 12px rgba(246, 0, 0, 0.6);
-        font-size: 1.8rem;
+        font-size: 1.4rem;  /* 🔴 più piccolo */
+        white-space: normal;
+        line-height: 1.4;
     }
 }
 
